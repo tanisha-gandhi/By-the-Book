@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>By the Book!</title>
+    <link href='https://fonts.googleapis.com/css?family=Pixelify Sans' rel='stylesheet'>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .content p{
+            font-family: 'Pixelify Sans';
+        }
+        .buttonF, .buttonZ, .buttonK, .buttonS{
+            display: inline-block;        /* Important for <a> */
+    text-decoration: none;        /* Removes underline */
+    text-align: center;           /* Centers text */
+    background-color: #FEDCDC;
+    padding: 14px 40px;
+    border-radius: 15px;
+    border: 2px solid #FEB2B4;    /* Replaces border-color only */
+    color: #ffffff;
+    font-family: 'Pixelify Sans';
+    font-size: 20px;
+    margin: 5px 0;
+    cursor: pointer;
+    width: 200px;
+        }
+        .buttonF:hover{
+            background-color: #AA0037;
+            border-color: #AA0037;
+        }
+        .buttonZ:hover{
+            background-color: #007328;
+            border-color: #007328;
+        }
+        .buttonK:hover{
+            background-color: #CDCD00;
+            border-color: #CDCD00;
+        }
+        .buttonS:hover{
+            background-color: #0A44AA;
+            border-color: #0A44AA;
+        }
+        
+        .popup {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            font-family: 'Pixelify Sans';
+        }
+
+        .popup:hover .popuptext {
+            visibility: visible;
+            animation: fadeIn 1s;
+        }
+        .popup .popuptext { /*popup(appears on top)*/
+            visibility: hidden;
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+        }
+        .popup .popuptext::after { /*popup*/
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity:1 ;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <p>STUDY BUDDY, <br>I choose you!</p> 
+            <div class="popup">
+                <a href="doremin.html" class="buttonF">Doremin</a>
+                <span class="popuptext">10x5 minutes</span> <!--40/20-->
+            </div>
+            <div class="popup">
+                <a href="zerpent.html" class="buttonZ">Zerpent</a>
+                <span class="popuptext">25x5 minutes</span> <!--50/10-->
+            </div>        
+            <div class="popup">
+                <a href="debonheir.html" class="buttonK">Debonheir</a>
+                <span class="popuptext">30x10 minutes</span> <!--50/10-->
+            </div>
+            <div class="popup">
+                <a href="seinyan.html" class="buttonS"><img src="pokeball.png" alt="Pokeball">Seinyan</a>
+                <span class="popuptext">45x15 minutes</span> <!--45/15-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>By the Book! Pomodoro Timer</title>
+    <link href='https://fonts.googleapis.com/css?family=Pixelify Sans' rel='stylesheet'>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+        .button1{
+            background-color: #FEDCDC;
+            padding: 14px 40px;
+            border-radius: 15px;
+            border-color: #FEB2B4;
+            font-family: 'Pixelify Sans';
+            font-size: 50px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="button1" onclick="openProgram()">Launch By The Book!</button>
+    </div>
+        <script>
+        function openProgram(){
+            window.open(
+                'bythebook.html',
+                'By The Book!',
+                'height=300,width=300,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no,status=no'
+            );
+        }
+    </script>
+</body>
+</html>
+
